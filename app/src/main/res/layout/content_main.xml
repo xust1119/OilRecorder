@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_date" />
+        <EditText
+            android:id="@+id/startDateEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unknown"
+            />
+        <TextView
+            android:text="@string/end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/endDateEditText"
+            android:text="@string/unknown"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:text="@string/total_oil"/>
+            <EditText android:id="@+id/totalOilEditText"
+                android:text="@string/unknown"
+                android:layout_span="2"/>
+            <TextView android:text="L"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/total_oil_cost"/>
+            <EditText android:id="@+id/totalOilCostEditText"
+                android:text="@string/unknown"
+                android:layout_span="2"/>
+            <TextView android:text="元"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/total_KM"/>
+            <EditText android:id="@+id/totalKMEditText"
+                android:text="@string/unknown"
+                android:layout_span="2"/>
+            <TextView android:text="KM"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/oil_wear"/>
+            <EditText android:id="@+id/oilWearEditText"
+                android:text="@string/unknown"
+                android:layout_span="2"/>
+            <TextView android:text="L/100km"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/cur_oil_wear"/>
+            <EditText android:id="@+id/curOilWearEditText"
+                android:text="@string/unknown"
+                android:layout_span="2"/>
+            <TextView android:text="L/100km"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/average_cost"/>
+            <EditText android:id="@+id/averageCostEditText"
+                android:text="@string/unknown"
+                android:layout_span="2"/>
+            <TextView android:text="元/KM"/>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/moreInfoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more_info"
+            android:layout_marginTop="25dp"/>
+
+        <Button
+            android:id="@+id/addDataBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_data"
+            android:layout_marginTop="25dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">OilRecorder</string>
+    <string name="action_settings">Settings</string>
+    <string name="start_date">起始:</string>
+    <string name="end_date">截止:</string>
+    <string name="unknown">\?????</string>
+    <string name="total_oil">总共加油:</string>
+    <string name="total_oil_cost">总油费:</string>
+    <string name="total_KM">总里程数：</string>
+    <string name="oil_wear">平均油耗：</string>
+    <string name="cur_oil_wear">当前油耗：</string>
+    <string name="average_cost">总平均花费：</string>
+    <string name="cur_average_cost">当前花费：</string>
+    <string name="more_info">详情</string>
+    <string name="add_data">添加</string>
+    <string name="title_activity_datas">DatasActivity</string>
+    <string name="title_activity_add_data">AddDataActivity</string>
+</resources>
